@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        #modal{
+        height: 580px;
+        width: 900px;
+        margin-top: 20px;
+         margin-left: 160px;
+        border: 1px solid grey;
+        border-radius: 15px;
+        position: absolute;
+        top: 4%;
+        left: 4%;
+        transform: scale(1);
+        display: block;
+        background-color: antiquewhite;
+        }
+        #modal>h1{
+            padding-top: 10px;
+        padding-left: 50px;
+        }
+        #summary1{
+            border: 2px white;
+    padding: 13px;
+    height: 65px;
+    width: 690px;
+    margin-top: 15px;
+    margin-left: 1px;
+    color: grey;
+    font-size: large;
+}
+#summary-sub{
+    margin-top: -10px;
+}
+        
+  #line{
+    height: 1px;
+    width: 750px;
+    background-color: grey;
+    margin-top: 10px;
+    margin-left: 96px;
+  } 
+  .image2{
+    margin-top: 45px;
+    height: 20px;
+    padding-left: 100px; 
+  } 
+  #summary2 {
+    border: 2px white;
+    padding: 13px;
+    height: 150px;
+    width: 690px;
+    margin-top: 15px;
+    margin-left: 1px;
+    color: grey;
+    font-size: large;
+  } 
+  #summary3{
+    border: 2px white;
+    padding: 13px;
+    height: 75px;
+    width: 690px;
+    margin-top: 15px;
+    margin-left: 1px;
+    color: grey;
+    font-size: large;
+  }
+  .btn{
+    margin-top: 20px;
+    height: 55px;
+    width: 40%;
+    margin-left: 250px;
+    border: 1px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-size: larger;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color :black;
+    color: white;}
+
+     .modal-backdrop{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0 , 0, 0, 0.5);
+      position: fixed;
+      top: 0%;
+      z-index: -1;
+      opacity: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="modal">
+      <div class="modal-backdrop"></div>
+    <h1> New Task</h1>
+    <div id="summary-main">
+        <div id="summary-sub">
+        <img src="write_5219822.png" class="image2">
+        <input type="text" name="Summary" id="summary1" placeholder="Summary">
+        </div>
+        <div id="line"></div>
+    </div> 
+    <div id="summary-main">
+        <div id="summary-sub">
+        <img src="icons8-content-64.png" class="image2">
+        <input type="text" name="Summary" id="summary2" placeholder="Discription">
+        </div>
+        <div id="line"></div>
+    </div>
+    <div id="summary-main">
+        <div id="summary-sub">
+        <img src="clock_992700.png" class="image2">
+        <input type="text" name="Summary" id="summary3" placeholder="Due date">
+        </div>
+        <div id="line"></div>
+    </div> 
+    <button class="btn">Save</button>
+    <br>
+    <button class="btn">Cancel</button>
+   </div>
+   
+</div>
+</div> 
+
+<script>
+
+  
+</script>
+
+
+
+
+
+</body>
+</html>

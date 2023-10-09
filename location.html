@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+
+
+ 
+}
+#main{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    position: relative;
+
+}
+
+#task{
+    height: 50px;
+    width: 260px;
+    display: flex;
+    border-right: 0px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: -13px;
+    cursor: pointer;
+}
+#task:hover{
+    background-color:grey;
+    color: white;
+    
+}
+h3{
+    margin-left: 12px;
+    margin-top: 12px;
+
+}
+.imagelogo{
+    height: 25px;
+    width: 25px;
+    margin-left: 30px;
+    margin-top: 10px
+}
+#location{
+    height: 50px;
+    width: 260px;
+    display: flex;
+    border-right: 0px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: -13px;
+    cursor: pointer;  
+}
+#location:hover{
+    background-color:grey;
+    color: white;}
+#logout{
+    height: 50px;
+    width: 260px;
+    display: flex;
+    border-right: 0px solid;
+    border-top: 0px solid ;
+    border-bottom: 0px solid ;
+    border-radius: 20px;
+    margin-top: 400px;
+    margin-left: -13px; 
+    cursor: pointer; 
+}
+#logout:hover{
+    background-color:grey;
+    color: white;}
+#incom-sec{
+    height: 300px;
+    width: 100vh;
+   
+}
+#addnewtask{
+    display: flex;
+    margin-top: 35px;
+
+}
+.plsbtn{
+    margin-left: 80px;
+    margin-top: 34px;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: white;
+    border: 0px;
+    cursor: pointer;
+}
+h4{
+    margin-top: 38px;
+    font-size: larger;
+    margin-left: 13px;
+}
+p{
+    margin-top: 30px;
+    margin-left: 86px;
+    font-size: larger;
+    font-weight: bold;
+    color: grey;
+}
+input{
+    height: 20px;
+    width: 20px;
+    margin-left: 85px;
+    margin-top: 15px;
+}
+.time
+{
+    height: 14px;
+    width: 14px;
+    margin-top: 5px;
+    margin-left: 112px;
+}
+
+span{
+    margin-top: 16px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+}
+#fsport{
+    display: flex;
+  
+}
+#snport{
+    display: flex;
+}
+h5{
+    margin-left: 4px;
+    font-weight: 700;
+    margin-top: 3px;
+    color: grey;
+}
+h2{
+    margin-left: 90px;
+    margin-top: 33px;
+}
+
+
+       
+    </style>
+</head>
+<body>
+   <div id="main">
+    <div id="right-sec">
+        <div id="task">
+            <img src="list_1950715.png" class="imagelogo" >
+            <h3>Task</h3>
+        </div>
+        <div id="location">
+         <img src="location-50.png" class="imagelogo" >
+         <h3>location</h3>   
+        </div>
+        <div id="logout">
+            <img src="logout.svg" class="imagelogo" >
+            <h3>Logout</h3>
+        </div>
+    </div>
+    <div id="left-sec">
+        <div id="incom-sec">
+            <div id="addnewtask">
+               <button type="submit" id="plusbtn" class="plsbtn">+</button>
+                <h4>Check In</h4>
+            </div>
+           
+            <h2>current location</h2>
+            <h2>pervious location</h2>
+        </div>
+        <div id="comp-sec"></div>
+    </div>
+   
+   </div> 
+   <script>
+
+const task = document.getElementById("task");
+let logout = document.getElementById("logout");
+ task.addEventListener("click", function () {
+    window.location.assign("modapage.html");
+});
+
+logout.addEventListener("click", function () {
+    window.location.assign("Figma1.html");
+});
+
+
+
+   </script>
+</body>
+</html>

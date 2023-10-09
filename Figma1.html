@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+        #login {
+            width: 400px;
+            height: 400px;
+            margin-top: 15%;
+            margin-left: 30%;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        input
+        {
+            padding: 10px;
+          margin-top: 14px;
+            height:  24px;
+            width: 80%;
+            margin-left: 45px;
+            border: 2px solid grey;
+            border-radius: 7px;
+           font-size: large;
+           background-color: rgb(238, 236, 236);
+        }
+     #field{
+          margin-top: 50px;
+     }
+      button{
+        margin-top: 35px;
+    height: 55px;
+    width: 86%;
+    margin-left: 45px;
+    border: 1px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+     
+    </style>
+</head>
+<body>
+    <div id="login">
+        <div id="head">
+        <h1>Log In</h1>
+       </div>
+       <div id="field">
+        <input type="email"  placeholder="Email">   
+        <input type="password"  placeholder="Password">
+    </div> 
+    <button id="btn">log In</button>
+    </div>
+    <script>
+        let email = document.querySelector('input[type="email"]');
+        let passwordInput = document.querySelector('input[type="password"]');
+        let btn = document.getElementById("btn");
+    
+        btn.addEventListener("click", checkEmail);
+    
+        function checkEmail() {
+            let userEmail = email.value;
+            let password = passwordInput.value;
+            let atpos = userEmail.indexOf("@");
+            let dotpos = userEmail.lastIndexOf(".");
+    
+            if (atpos < 1 || dotpos - atpos < 2 || password.length <= 5) {
+                alert("Please enter a valid email and ensure the password is at least 6 characters long.");
+                email.focus();
+                return false;
+            } else {
+                window.location.assign("modapage.html");
+                return true;
+            }
+        }
+    </script>
+    
+ 
+</body>
+</html>
+
